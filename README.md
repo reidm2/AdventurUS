@@ -3,11 +3,11 @@
 Our project is called *AdventurUS*.
 
 __Group members__:
-- Marlee Donnelly  (B00710138)
-- Matthew Reid (B00728822)
-- Karan Sukhija (B00809782)
-- Aman Arya (B00816348)
-- Neharika Sehgal (B00806887)
+- Marlee Donnelly
+- Matthew Reid
+- Karan Sukhija
+- Aman Arya
+- Neharika Sehgal
 
 __Contact email:__ mdonnelly@dal.ca
 
