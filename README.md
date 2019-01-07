@@ -1,3 +1,10 @@
+# Repository Overview and Purpose
+This is the original version of "AdventurUs: A Boredom Solving App", which was a group project submitted to Dalhousie University as part of our coursework for CSCI 4176: Mobile Computing in the Fall 2018 semester. The original contributors to this project are listed below, under the "Group members" subheading.
+
+As a contributor to the project, I decided to upload the final submission to my personal GitHub account, so that potential employers and/or colleagues may look at one of the sizable projects I contributed to during my time in school. Aside from changes to this ReadMe file, all files in the repository have not been altered since the original submission at the end of the Fall 2018 semester. If I decide to continue working on the project in the future, any changes would be made under a separate repository on my GitHub account.
+
+The remaining sections of the ReadMe were part of the project submission, with only personal/contact information removed.
+
 # Identification
 ![App Icon](small_icon.png "App Icon")
 Our project is called *AdventurUS*.
