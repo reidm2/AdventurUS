@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--For top and bottom app bars-->
+    <color name="colorPrimary">#4abaee</color>
+    <!--For top system bar-->
+    <color name="colorPrimaryDark">#008abb</color>
+    <color name="colorPrimaryLight">#86ecff</color>
+    <color name="primaryTextField">#eafaff</color>
+
+    <!--For components that are very close to the main bars-->
+    <color name="colorSecondary">#ee7e4a</color>
+    <color name="colorSecondaryDark">#b64f1e</color>
+    <color name="colorSecondaryLight">#ffaf77</color>
+
+    <!--Material design colours-->
+    <color name="White">#FFFFFF</color>
+    <color name="colorWarning">#FFFF00</color>
+    <color name="ErrorRed">#ff0033</color>
+</resources>

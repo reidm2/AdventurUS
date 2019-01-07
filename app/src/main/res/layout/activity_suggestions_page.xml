@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--CSCI 4176: Mobile Computing Group Project-->
+<!--Group #9-->
+
+<!--This is the XML file that defines the layout of the Suggestions page-->
+<!--The layout here was designed to be similar to other UI views in the app (searching and registration)-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SuggestionsPage">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:backgroundTint="@color/White"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:srcCompat="@drawable/logo1" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/title_suggest_activity"
+                    android:textColor="@color/White"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10sp"
+                    android:orientation="vertical">
+
+                    <SeekBar
+                        android:id="@+id/seekBarPrice"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="48dp"
+                        android:max="3"
+                        android:progress="0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/titleCost" />
+
+                    <Spinner
+                        android:id="@+id/spActivityType"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        style="@style/Widget.App.Spinner"
+                        app:layout_constraintBottom_toTopOf="@+id/nameInput"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title_activity_type" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/nameInput"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/descInput"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/spActivityType">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/nameInputField"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/title_name"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/descInput"
+                        android:layout_width="256dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/title_photos"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/nameInput">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/descInputField"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/desc_activity_description"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/titleCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/title_cost"
+                        android:textAppearance="@android:style/TextAppearance.Material.Large"
+                        app:layout_constraintBottom_toTopOf="@+id/seekBarPrice"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title_activity_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/title_activity_type"
+                        android:paddingBottom="5sp"
+                        android:textAppearance="@android:style/TextAppearance.Material.Large"
+                        app:layout_constraintBottom_toTopOf="@+id/spActivityType"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelCostLow" />
+
+                    <TextView
+                        android:id="@+id/title_photos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/title_photos"
+                        android:textAppearance="@android:style/TextAppearance.Material.Large"
+                        app:layout_constraintBottom_toTopOf="@+id/btnAddPhotos"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/descInput" />
+
+                    <Button
+                        android:id="@+id/btnAddPhotos"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/colorSecondaryLight"
+                        android:text="@string/btn_add"
+                        android:textSize="36sp"
+                        app:layout_constraintBottom_toTopOf="@+id/btnSubmitActivity"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title_photos" />
+
+                    <Button
+                        android:id="@+id/btnSubmitActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/colorSecondary"
+                        android:text="@string/btn_submit"
+                        android:textColor="@color/White"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/labelFree"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/priceFree"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toTopOf="@+id/title_activity_type"
+                        app:layout_constraintEnd_toStartOf="@+id/labelCostLow"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/seekBarPrice" />
+
+                    <TextView
+                        android:id="@+id/labelCostLow"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/priceLow"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/labelFree"
+                        app:layout_constraintEnd_toStartOf="@+id/labelCostMed"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/labelFree"
+                        app:layout_constraintTop_toTopOf="@+id/labelFree" />
+
+                    <TextView
+                        android:id="@+id/labelCostMed"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/priceMedium"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/labelCostLow"
+                        app:layout_constraintEnd_toStartOf="@+id/labelCostHigh"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/labelCostLow"
+                        app:layout_constraintTop_toTopOf="@+id/labelCostLow" />
+
+                    <TextView
+                        android:id="@+id/labelCostHigh"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/priceHigh"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/labelCostMed"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/labelCostMed"
+                        app:layout_constraintTop_toTopOf="@+id/labelCostMed" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/btnAddPhotos"
+                        app:layout_constraintEnd_toStartOf="@+id/btnCamera"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/btnAddPhotos"
+                        app:layout_constraintTop_toTopOf="@+id/btnAddPhotos"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/imgplaceholder" />
+
+                    <ImageButton
+                        android:id="@+id/btnCamera"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="72dp"
+                        android:background="@color/colorSecondaryLight"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                        app:layout_constraintTop_toTopOf="@+id/imageView"
+                        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+                    <Button
+                        android:id="@+id/deleteImage"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:onClick="resetImage"
+                        android:text="@string/x_icon"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintEnd_toStartOf="@+id/btnCamera"
+                        app:layout_constraintHorizontal_bias="0.81"
+                        app:layout_constraintStart_toStartOf="@+id/imageView"
+                        app:layout_constraintTop_toBottomOf="@+id/title_photos"
+                        app:layout_constraintVertical_bias="0.31" />
+                </android.support.constraint.ConstraintLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

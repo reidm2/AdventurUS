@@ -1,0 +1,94 @@
+<resources>
+    <!--CSCI 4176: Mobile Computing Group Project-->
+    <!--Group #9-->
+
+    <!--This is the XML file that defines the layout for the Search Page-->
+
+    <!--Generic Strings-->
+    <string name="app1_name">UserRegistration</string>
+    <string name="app_name">AdventurUS</string>
+
+    <!--Maps Page Strings-->
+    <string name="btn_search">Find Activities</string>
+    <string name="btn_suggest">Suggest Activities</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="registerButton">REGISTER</string>
+    <string name="signInButton">SIGN IN</string>
+    <string name="filler">Default Text</string>
+    <string name="loading">Please Wait.&#xA;
+        We are loading the Map for you</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."</string>
+
+    <!--Strings for the Registration page-->
+    <string name="registerationHeader">Create New Account</string>
+    <string name="usernameHint">Username</string>
+    <string name="passwordHint">Password</string>
+    <string name="confirmHint">Confirm Password</string>
+    <string name="emailHint">Email</string>
+    <string name="loginHereButton">Already signed up? Login here!</string>
+
+    <!--Search page strings-->
+    <string name="headerText">Find Activities</string>
+    <string name="costText">Cost:</string>
+    <string name="activityText">Activity Type:</string>
+    <string name="distanceText">Distance:</string>
+    <string name="search">Search</string>
+    <string name="priceAny">ANY</string>
+    <string name="priceFree">FREE</string>
+    <string name="priceLow">$</string>
+    <string name="priceMedium">$$</string>
+    <string name="priceHigh">$$$</string>
+    <string name="dirButton">Get Directions</string>
+    <string-array name="activityTypes">
+        <item>Any</item>
+        <item>Food</item>
+        <item>Casual</item>
+        <item>Outdoor</item>
+        <item>Educational</item>
+        <item>Active</item>
+        <item>Scenic</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="distanceValues">
+        <item>Within 1 KM</item>
+        <item>Within 2 KM</item>
+        <item>Within 5 KM</item>
+        <item>Within 10 KM</item>
+    </string-array>
+
+    <!-- Strings for Suggestions page -->
+    <string name="title_suggest_activity">Suggest an Activity</string>
+    <string name="title_cost">Cost</string>
+    <string name="title_activity_type">Activity Type</string>
+    <string name="title_photos">Select or Take a Photo</string>
+    <string name="desc_activity_description">Enter a description</string>
+    <string name="btn_add">+</string>
+    <string name="btn_submit">Submit Activity</string>
+    <string name="title_name">Activity Name</string>
+    <string name="x_icon">X</string>
+    <string-array name="suggestedTypes">
+        <item>Other</item>
+        <item>Food</item>
+        <item>Casual</item>
+        <item>Outdoor</item>
+        <item>Educational</item>
+        <item>Active</item>
+        <item>Scenic</item>
+    </string-array>
+
+    <!-- Advisory Strings -->
+    <string name="location_warning">Please enable Device Location to automatically detect your location</string>
+    <string name="noResults">No activities were found matching your search criteria.</string>
+</resources>

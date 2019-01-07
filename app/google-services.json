@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "385318757331",
+    "firebase_url": "https://adventurus-3581d.firebaseio.com",
+    "project_id": "adventurus-3581d",
+    "storage_bucket": "adventurus-3581d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385318757331:android:300bee36de14bd59",
+        "android_client_info": {
+          "package_name": "group9.adventurus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385318757331-shibj0spoqet0mootoov392kepdts70g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0yEgQtcVX5BcKmTO-aJGFhEt2Ma-GtPQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
