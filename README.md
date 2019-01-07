@@ -9,10 +9,6 @@ __Group members__:
 - Aman Arya
 - Neharika Sehgal
 
-__Contact email:__ mdonnelly@dal.ca
-
-__Git repository:__ https://git.cs.dal.ca/arya/AdventurUS.git
-
 # Project Summary
 AdventurUS is an app designed to help people between the ages of 20-30 beat boredom by generating a customized list of activities close to wherever they happen to be. Since the activity suggestions are provided by other users, a large community and variety of options is required to generate lists that are actually fitting and helpful, so this app is intended to be used in more heavily populated areas, like cities. 
 
